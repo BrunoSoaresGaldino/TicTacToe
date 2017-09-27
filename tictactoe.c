@@ -122,7 +122,7 @@ __attribute__((noinline)) static void MovimentoComputador(char *tabuleiro, char 
     i = cantos[rand()%4];
     j = 0;
 
-    while( (*(tabuleiro+i) != ' ') && (j++ < 4))
+    while( (*(tabuleiro+i) == ' ') && (j++ < 4))
         i = cantos[rand()%4];
     
     *(tabuleiro + i) = simbolo;
